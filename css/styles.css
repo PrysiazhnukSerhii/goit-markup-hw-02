@@ -19,7 +19,7 @@ body {
 
 .logo {
   font-family: raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -37,7 +37,7 @@ body {
 }
 
 /* site-nav */
-.site-nav .link {
+.site-nav-link {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -46,12 +46,16 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-colot);
 }
+.current:active {
+  color: var(--accent-colot);
+}
+
 /* contacts */
-.contacts a {
+.contacts-link {
   color: var(--primeri-text-color);
 
   font-weight: 500;
@@ -60,8 +64,8 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contacts a:hover,
-.contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-colot);
 }
 
@@ -80,16 +84,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero .link {
+.hero-button {
   background-color: var(--accent-colot);
   color: var(--white-color);
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87x;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  line-height: 1.87;
+
   letter-spacing: 0.06em;
 
   cursor: pointer;
@@ -99,13 +101,13 @@ body {
 .section-title {
   color: var(--title-text-color);
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.feature-list .title {
+.feature-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -119,7 +121,7 @@ body {
   line-height: 1.71;
 }
 
-.avatar .name {
+.team-name {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -140,7 +142,7 @@ body {
 .footer {
   background-color: var(--black-background-color);
 }
-.footer .logo-and {
+.logo-and {
   color: var(--white-color);
 }
 .plase {
@@ -150,8 +152,10 @@ body {
   line-height: 1.71;
   text-decoration: none;
 }
-
-.address .link {
+.address {
+  font-style: normal;
+}
+.address-link {
   color: var(--translucent-color);
 
   font-size: 14px;
@@ -159,8 +163,10 @@ body {
   text-decoration: none;
 }
 
-.address a:focus,
-.address a:hover {
+.address-link,
+.plase:focus,
+.address-link,
+.plase:hover {
   color: var(--accent-colot);
 }
 
@@ -176,7 +182,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
 
   cursor: pointer;
 }
@@ -207,4 +212,5 @@ body {
 .projects-text {
   font-size: 16px;
   line-height: 30px;
+  color: #757575;
 }
